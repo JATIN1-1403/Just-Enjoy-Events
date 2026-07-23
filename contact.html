@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Just Enjoy Events</title>
+<meta name="description" content="Book a free consultation or check our availability for your wedding date.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Just <span>Enjoy</span> Events</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="mobile-cta-wrap"><a href="contact.html" class="btn btn-primary">Book a Consultation</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary"><span class="long">Book a </span>Consultation</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container reveal">
+    <div class="eyebrow">Let's talk</div>
+    <h1>Tell us about your wedding.</h1>
+    <p>Fill out the form below and we'll get back to you within 24 hours with next steps.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:60px;align-items:flex-start;">
+
+      <div class="reveal">
+        <h2>Inquiry Form</h2>
+        <!--
+          GOOGLE FORMS SETUP — replace the placeholders below:
+          1. data-google-action: your form's ".../formResponse" URL
+          2. each data-entry="entry.XXXXXXXXX": the matching entry ID
+          See README.md "Connecting the forms to Google Forms" for how to find these.
+        -->
+        <form data-google-form
+              data-google-action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSds7DzH24YD_3ucWd40ALKkmkMib556c3nBHT9U5DTDdXzrvg/formResponse">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required data-entry="entry.1244712076">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required data-entry="entry.1600661155">
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" data-entry="entry.1500449151">
+            </div>
+            <div class="field">
+              <label for="date">Wedding date</label>
+              <input id="date" name="date" type="date"
+                     data-entry-year="entry.259551828_year"
+                     data-entry-month="entry.259551828_month"
+                     data-entry-day="entry.259551828_day">
+            </div>
+            <div class="field">
+              <label for="venue">Venue (if chosen)</label>
+              <input id="venue" name="venue" type="text" data-entry="entry.1488425005">
+            </div>
+            <div class="field">
+              <label for="guests">Expected guests</label>
+              <input id="guests" name="guests" type="number" min="1" data-entry="entry.2072185689">
+            </div>
+            <div class="field full">
+              <label for="budget">Estimated budget</label>
+              <select id="budget" name="budget" data-entry="entry.1531732739">
+                <option value="">Select a range</option>
+                <option>Under ₱300,000</option>
+                <option>₱300,000 – ₱600,000</option>
+                <option>₱600,000 – ₱1,000,000</option>
+                <option>Over ₱1,000,000</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Tell us about your day</label>
+              <textarea id="message" name="message" placeholder="Style, must-haves, anything you're worried about..." data-entry="entry.833172852"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:20px;">Send Inquiry</button>
+          <p class="form-note">Submissions are sent straight to a connected Google Form / Sheet.</p>
+        </form>
+        <div class="form-success">Thank you! Your inquiry has been received. We'll be in touch within 24 hours.</div>
+      </div>
+
+      <div class="reveal">
+        <h2>Reach Us Directly</h2>
+        <div class="card" style="margin-bottom:24px;">
+          <p style="margin-bottom:6px;"><strong>Email</strong></p>
+          <p>justenjoyevents2017@gmail.com</p>
+          <p style="margin-bottom:6px;"><strong>Phone</strong></p>
+          <p>+63 9664156168</p>
+          <p style="margin-bottom:6px;"><strong>Messenger &amp; Facebook</strong></p>
+          <a href="https://www.facebook.com/justenjoyeventsnaga" target="_blank" rel="noopener" class="btn btn-outline" title="Goes to the Official FB page" style="margin-bottom:6px;">Visit Our Facebook Page</a>
+          <p style="margin-bottom:6px;"><strong>Based in</strong></p>
+          <p>Pacol, Naga City, Naga City, Philippines</p>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY CHECKER -->
+<section class="section section-alt" id="availability">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center;">Quick check</div>
+      <h2>Check Our Availability</h2>
+      <p>Not ready for a full inquiry? Just tell us the basics and we'll confirm if your date is open.</p>
+    </div>
+    <div class="avail-widget reveal">
+      <!--
+        This can point to the SAME Google Form as the inquiry form above
+        (just leave the extra fields blank), or a separate, shorter one —
+        your call. Fill in the placeholders the same way.
+      -->
+      <form data-google-form
+            data-google-action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfQeHSabyGT1QOoVBX9yhx7TuIU72zuisMS2juIc5mPdFotZw/formResponse">
+        <div class="form-grid">
+          <div class="field">
+            <label for="avail-date">Wedding date</label>
+            <input id="avail-date" type="date" required
+                   data-entry-year="entry.272012839_year"
+                   data-entry-month="entry.272012839_month"
+                   data-entry-day="entry.272012839_day">
+          </div>
+          <div class="field">
+            <label for="avail-email">Email</label>
+            <input id="avail-email" type="email" required placeholder="you@email.com" data-entry="entry.1727699303">
+          </div>
+          <div class="field">
+            <label for="avail-venue">Venue</label>
+            <input id="avail-venue" type="text" placeholder="e.g. Balay Dako, Tagaytay" data-entry="entry.485990579">
+          </div>
+          <div class="field full">
+            <label for="avail-guests">Expected guests</label>
+            <input id="avail-guests" type="number" min="1" data-entry="entry.1609920653">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">Check Availability</button>
+      </form>
+      <div class="form-success">Thanks! We'll confirm whether your date is open within 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Just <span>Enjoy</span> Events</a>
+        <p>A family-owned wedding planning &amp; coordination team, guiding couples from their first inquiry to their last dance.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/justenjoyeventsnaga" target="_blank" rel="noopener" class="icon-btn" aria-label="Visit our Facebook page" title="Visit our Facebook page">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Wedding Academy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="partners.html">Partner Suppliers</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:justenjoyevents2017@gmail.com">justenjoyevents2017@gmail.com</li>
+          <li><a href="tel:+639664156168">+63 9664156168</li>
+          <li>Pacol, Naga City, Naga City, Philippines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Just Enjoy Events. All rights reserved.</span>
+      <span>Made with care for couples who just want to enjoy their day.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
