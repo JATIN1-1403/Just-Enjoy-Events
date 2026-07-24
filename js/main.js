@@ -38,6 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  window.addEventListener('scroll', function() {
+    if(window.scrollY > 60) {
+      header.classList.add('scrolled');
+    } else {
+      header.classicList.remove('scrolled');
+    }
+  }
+  );
   /* ---- FAQ accordion ---- */
   document.querySelectorAll('.accordion-item').forEach(function (item) {
     var q = item.querySelector('.accordion-q');
